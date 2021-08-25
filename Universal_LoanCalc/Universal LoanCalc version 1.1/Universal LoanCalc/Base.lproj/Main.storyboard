@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Universal_LoanCalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jQm-37-Opp">
+                                <rect key="frame" x="8" y="28" width="304" height="532"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3d-l6-89k">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="266"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Universal LoanCalc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="j8A-jB-e8u">
+                                                <rect key="frame" x="8" y="2" width="288" height="31.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vHk-1p-8sL">
+                                                <rect key="frame" x="8" y="45.5" width="288" height="185"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cost" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gSz-Nv-0Jg" customClass="TextField" customModule="Universal_LoanCalc" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="288" height="30.5"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                <integer key="value" value="7"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="textFieldCost:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="57w-O0-QIs"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Down Payment" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B4R-4u-fT7" customClass="TextField" customModule="Universal_LoanCalc" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="38.5" width="288" height="30.5"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                <integer key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="textFieldDownPayment:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="cqw-rX-e3P"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Months" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Tk-Uf-JHg" customClass="TextField" customModule="Universal_LoanCalc" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="77" width="288" height="31"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                <integer key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="textFieldMonths:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="Oaj-Fy-bkF"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Annual % Rate" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3TB-bQ-obn" customClass="TextField" customModule="Universal_LoanCalc" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="116" width="288" height="30.5"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                <integer key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="textFieldAPR:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="O8P-ez-wBv"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tax % Rate" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zlt-f7-adV" customClass="TextField" customModule="Universal_LoanCalc" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="154.5" width="288" height="30.5"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                <integer key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="textFieldTax:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="fhW-hk-Cva"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="My5-3E-hAR">
+                                                <rect key="frame" x="8" y="242.5" width="288" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="My5-3E-hAR" firstAttribute="top" secondItem="vHk-1p-8sL" secondAttribute="bottom" constant="12" id="BKB-jB-rQ6"/>
+                                            <constraint firstItem="vHk-1p-8sL" firstAttribute="top" secondItem="j8A-jB-e8u" secondAttribute="bottom" constant="12" id="LFP-eB-SxG"/>
+                                            <constraint firstItem="j8A-jB-e8u" firstAttribute="top" secondItem="z3d-l6-89k" secondAttribute="top" constant="2" id="RFh-iV-UZm"/>
+                                            <constraint firstItem="vHk-1p-8sL" firstAttribute="leading" secondItem="z3d-l6-89k" secondAttribute="leading" constant="8" id="SnN-5T-ctL"/>
+                                            <constraint firstAttribute="bottom" secondItem="My5-3E-hAR" secondAttribute="bottom" constant="2" id="gCd-Wn-VLf"/>
+                                            <constraint firstItem="j8A-jB-e8u" firstAttribute="leading" secondItem="z3d-l6-89k" secondAttribute="leading" constant="8" id="kZn-bv-nLh"/>
+                                            <constraint firstAttribute="trailing" secondItem="vHk-1p-8sL" secondAttribute="trailing" constant="8" id="kZy-UD-nL6"/>
+                                            <constraint firstAttribute="trailing" secondItem="j8A-jB-e8u" secondAttribute="trailing" constant="8" id="s34-Mg-2Sv"/>
+                                            <constraint firstAttribute="trailing" secondItem="My5-3E-hAR" secondAttribute="trailing" constant="8" id="tIE-fz-WdC"/>
+                                            <constraint firstItem="My5-3E-hAR" firstAttribute="leading" secondItem="z3d-l6-89k" secondAttribute="leading" constant="8" id="viQ-q5-gKk"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahc-vD-avU">
+                                        <rect key="frame" x="0.0" y="266" width="304" height="266"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tzs-fk-cg7">
+                                                <rect key="frame" x="8" y="8" width="288" height="206"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWP-aI-YvX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="206"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="206" id="QYt-VI-OtC"/>
+                                                            <constraint firstAttribute="width" constant="144" id="iY2-ak-spl"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="fNe-dp-ahq">
+                                                        <rect key="frame" x="144" y="0.0" width="144" height="206"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="CGh-6r-wSu">
+                                                <rect key="frame" x="52" y="222" width="200" height="36"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="be0-In-cYi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="36"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <state key="normal" title="Calculate"/>
+                                                        <connections>
+                                                            <action selector="btnCalculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mt7-id-4Jt"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLD-bS-vom">
+                                                        <rect key="frame" x="125" y="0.0" width="75" height="36"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <state key="normal" title="Clear"/>
+                                                        <connections>
+                                                            <action selector="btnClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A64-T6-eBn"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Tzs-fk-cg7" secondAttribute="trailing" constant="8" id="0C2-95-qWp"/>
+                                            <constraint firstAttribute="bottom" secondItem="CGh-6r-wSu" secondAttribute="bottom" constant="8" id="4wv-Vl-O2f"/>
+                                            <constraint firstItem="CGh-6r-wSu" firstAttribute="leading" secondItem="ahc-vD-avU" secondAttribute="leading" constant="52" id="9js-3f-5PR"/>
+                                            <constraint firstItem="CGh-6r-wSu" firstAttribute="top" secondItem="Tzs-fk-cg7" secondAttribute="bottom" constant="8" id="GRw-eR-qp8"/>
+                                            <constraint firstItem="Tzs-fk-cg7" firstAttribute="leading" secondItem="ahc-vD-avU" secondAttribute="leading" constant="8" id="WIL-Pt-SuY"/>
+                                            <constraint firstAttribute="trailing" secondItem="CGh-6r-wSu" secondAttribute="trailing" constant="52" id="YG1-8D-K4P"/>
+                                            <constraint firstItem="Tzs-fk-cg7" firstAttribute="top" secondItem="ahc-vD-avU" secondAttribute="top" constant="8" id="zis-P4-nu3"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ahc-vD-avU" firstAttribute="top" secondItem="3TB-bQ-obn" secondAttribute="bottom" constant="74" id="PU4-MB-Ffu"/>
+                                    <constraint firstItem="ahc-vD-avU" firstAttribute="top" secondItem="gSz-Nv-0Jg" secondAttribute="bottom" constant="190" id="og2-RB-bDo"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jQm-37-Opp" secondAttribute="trailing" constant="8" id="20l-it-tFD"/>
+                            <constraint firstItem="jQm-37-Opp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="9dZ-Lg-fSm"/>
+                            <constraint firstItem="jQm-37-Opp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="RbV-cC-QoL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jQm-37-Opp" secondAttribute="bottom" constant="8" id="aqa-oK-dTQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblMessage" destination="My5-3E-hAR" id="xzV-XE-JmG"/>
+                        <outlet property="txtAPR" destination="3TB-bQ-obn" id="hCN-V0-KSY"/>
+                        <outlet property="txtCost" destination="gSz-Nv-0Jg" id="WgP-Lw-dnN"/>
+                        <outlet property="txtDownPayment" destination="B4R-4u-fT7" id="92B-be-aFl"/>
+                        <outlet property="txtMonths" destination="9Tk-Uf-JHg" id="2r3-KY-UoX"/>
+                        <outlet property="txtTax" destination="zlt-f7-adV" id="3kj-aD-mBe"/>
+                        <outlet property="txtViewLabels" destination="VWP-aI-YvX" id="Ot1-S5-F5N"/>
+                        <outlet property="txtViewResults" destination="fNe-dp-ahq" id="sTO-eN-67i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-455.625" y="33.802816901408448"/>
+        </scene>
+    </scenes>
+</document>
