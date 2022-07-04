@@ -6,7 +6,7 @@ This is a loan calculator for a vehicle. Just enter the cost of the vehicle, the
 To report bugs, email me at japio7@icloud.com
 
 ## Screenshots
-<img width="621" alt="1242 X 2688 2" src="https://user-images.githubusercontent.com/39530089/177177804-0ed8a3a5-5031-41ee-b8cd-ee2305640773.png">
-<img width="621" alt="1242 X 2688 4" src="https://user-images.githubusercontent.com/39530089/177177900-53d4cda1-fb66-4fff-99f5-abdfae57ff5b.png">
+<img width="200" alt="1242 X 2688 2" src="https://user-images.githubusercontent.com/39530089/177177804-0ed8a3a5-5031-41ee-b8cd-ee2305640773.png">
+<img width="200" alt="1242 X 2688 4" src="https://user-images.githubusercontent.com/39530089/177177900-53d4cda1-fb66-4fff-99f5-abdfae57ff5b.png">
 
 
