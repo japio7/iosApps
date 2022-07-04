@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VBw-gj-l0i">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vehicle LoanCalc-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Vehicle_LoanCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nnm-Vz-btc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iCp-0I-nCr">
+                                        <rect key="frame" x="8" y="100" width="359" height="692"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dZR-kP-YZ9">
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="375"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="rPY-dO-VjO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="359" height="225"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vehicle Cost" textAlignment="right" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="zgR-Xb-8Qg" customClass="BorderedTextField" customModule="Vehicle_LoanCalculator" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="359" height="29.666666666666668"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" systemColor="systemFillColor"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="textFieldCost:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="vhl-Cs-DHc"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Down Payment" textAlignment="right" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="pSw-rj-zF1" customClass="BorderedTextField" customModule="Vehicle_LoanCalculator" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="32.666666666666657" width="359" height="29.333333333333329"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                        <integer key="value" value="5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" systemColor="systemFillColor"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="textFieldDownPayment:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="w4f-8Z-Ixv"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of Months" textAlignment="right" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="3Mf-Ax-HA2" customClass="BorderedTextField" customModule="Vehicle_LoanCalculator" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="65" width="359" height="29.666666666666671"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                        <integer key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" systemColor="systemFillColor"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="textFieldMonths:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="gEA-Ge-bCx"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="APR % Rate" textAlignment="right" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="OWD-by-DYW" customClass="BorderedTextField" customModule="Vehicle_LoanCalculator" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="97.666666666666657" width="359" height="29.666666666666671"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                        <integer key="value" value="5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" systemColor="systemFillColor"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="textFieldAPR:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="mOT-yw-JrZ"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tax% Rate" textAlignment="right" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="z8j-AM-FlU" customClass="BorderedTextField" customModule="Vehicle_LoanCalculator" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="130.33333333333334" width="359" height="29.666666666666657"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                        <integer key="value" value="5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" systemColor="systemFillColor"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="textFieldTax:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="p16-K5-KBJ"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Warranty &amp; Other Fees" textAlignment="right" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="1ol-Oh-Wra" customClass="BorderedTextField" customModule="Vehicle_LoanCalculator" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="163" width="359" height="29.333333333333343"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                        <integer key="value" value="5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" systemColor="systemFillColor"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="textFieldFees:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="GD4-9p-ZQP"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="SJq-iA-eSG">
+                                                                <rect key="frame" x="0.0" y="195.33333333333331" width="359" height="29.666666666666657"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Kau-rZ-tEa">
+                                                        <rect key="frame" x="0.0" y="230" width="359" height="145"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="fmo-gc-TOX">
+                                                                <rect key="frame" x="0.0" y="0.0" width="179.66666666666666" height="145"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="evZ-iO-4zq">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="179.66666666666666" height="26.666666666666668"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Financed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="PRN-bI-f2f">
+                                                                        <rect key="frame" x="0.0" y="29.666666666666686" width="179.66666666666666" height="26.666666666666671"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Interest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="STP-hr-14L">
+                                                                        <rect key="frame" x="0.0" y="59.333333333333321" width="179.66666666666666" height="26.333333333333336"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Tax" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="sOt-tc-zz1">
+                                                                        <rect key="frame" x="0.0" y="88.666666666666686" width="179.66666666666666" height="26.666666666666671"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="BEi-OM-h9c">
+                                                                        <rect key="frame" x="0.0" y="118.33333333333333" width="179.66666666666666" height="26.666666666666671"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Hz7-rX-4wS">
+                                                                <rect key="frame" x="179.66666666666663" y="0.0" width="179.33333333333337" height="145"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly Payment" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="PUg-NC-JYG">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="179.33333333333334" height="26.666666666666668"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Financed" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="3wF-V4-XDt">
+                                                                        <rect key="frame" x="0.0" y="29.666666666666686" width="179.33333333333334" height="26.666666666666671"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Interest" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="3lM-SD-hl7">
+                                                                        <rect key="frame" x="0.0" y="59.333333333333321" width="179.33333333333334" height="26.333333333333336"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Tax" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="zqb-M9-RpK">
+                                                                        <rect key="frame" x="0.0" y="88.666666666666686" width="179.33333333333334" height="26.666666666666671"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Amount" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="NG9-Aw-G1a">
+                                                                        <rect key="frame" x="0.0" y="118.33333333333333" width="179.33333333333334" height="26.666666666666671"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5Ne-6m-1yv">
+                                                <rect key="frame" x="0.0" y="385" width="359" height="307"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iBf-L5-wH2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="359" height="258"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Structure" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="nmf-FZ-Xkk">
+                                                                <rect key="frame" x="0.0" y="0.0" width="359" height="30"/>
+                                                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LA3-h5-lgv">
+                                                                <rect key="frame" x="0.0" y="40" width="359" height="218"/>
+                                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <prototypes>
+                                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="W9a-n5-UX8">
+                                                                        <rect key="frame" x="0.0" y="44.666666030883789" width="359" height="43.666667938232422"/>
+                                                                        <autoresizingMask key="autoresizingMask"/>
+                                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W9a-n5-UX8" id="HSh-HG-eG1">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="359" height="43.666667938232422"/>
+                                                                            <autoresizingMask key="autoresizingMask"/>
+                                                                        </tableViewCellContentView>
+                                                                    </tableViewCell>
+                                                                </prototypes>
+                                                                <connections>
+                                                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="fMq-3F-DLf"/>
+                                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="09X-hP-jcr"/>
+                                                                </connections>
+                                                            </tableView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="UmM-1H-EpP">
+                                                        <rect key="frame" x="0.0" y="268" width="359" height="39"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRn-uF-KKr" customClass="BorderedButton" customModule="Vehicle_LoanCalculator" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="129.66666666666666" height="39"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                                <state key="normal" title="Calculate">
+                                                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" systemColor="systemBlueColor"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="btnCalculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2XU-qN-p8a"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZy-QG-ztt" customClass="BorderedButton" customModule="Vehicle_LoanCalculator" customModuleProvider="target">
+                                                                <rect key="frame" x="229.66666666666663" y="0.0" width="129.33333333333337" height="39"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                                <state key="normal" title="Clear">
+                                                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" systemColor="systemBlueColor"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="btnClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ppD-NT-Gnz"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="nmf-FZ-Xkk" firstAttribute="top" secondItem="SJq-iA-eSG" secondAttribute="bottom" constant="160" id="v0Y-5z-q3X"/>
+                                            <constraint firstItem="LA3-h5-lgv" firstAttribute="top" secondItem="dZR-kP-YZ9" secondAttribute="bottom" constant="50" id="w3M-eK-KBX"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="iCp-0I-nCr" secondAttribute="bottom" constant="20" id="Rp9-Yi-jzi"/>
+                                    <constraint firstAttribute="trailing" secondItem="iCp-0I-nCr" secondAttribute="trailing" constant="8" id="XYc-z0-RBz"/>
+                                    <constraint firstItem="iCp-0I-nCr" firstAttribute="top" secondItem="nnm-Vz-btc" secondAttribute="top" constant="100" id="XYs-UJ-F0z"/>
+                                    <constraint firstItem="Kau-rZ-tEa" firstAttribute="top" secondItem="nnm-Vz-btc" secondAttribute="top" constant="330" id="l54-dB-wGQ"/>
+                                    <constraint firstItem="iCp-0I-nCr" firstAttribute="leading" secondItem="nnm-Vz-btc" secondAttribute="leading" constant="8" id="wQY-bv-Iir"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nnm-Vz-btc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8NU-OK-wrs"/>
+                            <constraint firstItem="nnm-Vz-btc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PFJ-Gf-2md"/>
+                            <constraint firstItem="nnm-Vz-btc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Vfq-aW-fvF"/>
+                            <constraint firstAttribute="bottom" secondItem="nnm-Vz-btc" secondAttribute="bottom" id="mxA-DZ-ACi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Vehicle LoanCalc" id="yhk-JQ-KX7"/>
+                    <connections>
+                        <outlet property="lblMessage" destination="SJq-iA-eSG" id="cDP-Qf-xnk"/>
+                        <outlet property="lblMonthlyPayment" destination="PUg-NC-JYG" id="SCf-8Z-Dkc"/>
+                        <outlet property="lblMonthlyPaymentLabel" destination="evZ-iO-4zq" id="Dah-Kc-0OH"/>
+                        <outlet property="lblPaymentStructure" destination="nmf-FZ-Xkk" id="P9v-D8-itz"/>
+                        <outlet property="lblTotalAmount" destination="NG9-Aw-G1a" id="2Yj-Vl-37f"/>
+                        <outlet property="lblTotalAmountLabel" destination="BEi-OM-h9c" id="RAg-eh-5Vf"/>
+                        <outlet property="lblTotalFinanced" destination="3wF-V4-XDt" id="509-U2-oOl"/>
+                        <outlet property="lblTotalFinancedLabel" destination="PRN-bI-f2f" id="7yZ-Vm-Ynr"/>
+                        <outlet property="lblTotalInterest" destination="3lM-SD-hl7" id="Uu2-dr-t2H"/>
+                        <outlet property="lblTotalInterestLabel" destination="STP-hr-14L" id="UsO-xn-A1b"/>
+                        <outlet property="lblTotalTax" destination="zqb-M9-RpK" id="aRX-7v-VE2"/>
+                        <outlet property="lblTotalTaxLabel" destination="sOt-tc-zz1" id="2ES-vz-DFE"/>
+                        <outlet property="table" destination="LA3-h5-lgv" id="EWg-EB-0YU"/>
+                        <outlet property="txtAPR" destination="OWD-by-DYW" id="8SP-hr-Nwu"/>
+                        <outlet property="txtDownPayment" destination="pSw-rj-zF1" id="LLI-hB-JA6"/>
+                        <outlet property="txtFees" destination="1ol-Oh-Wra" id="69L-zR-aqT"/>
+                        <outlet property="txtNumberOfMonths" destination="3Mf-Ax-HA2" id="GZX-7D-a49"/>
+                        <outlet property="txtTax" destination="z8j-AM-FlU" id="2fF-hA-BHF"/>
+                        <outlet property="txtVehicleCost" destination="zgR-Xb-8Qg" id="yO8-Dp-DaF"/>
+                        <outlet property="view1" destination="8bC-Xf-vdC" id="1hf-Wk-OaN"/>
+                        <outlet property="view2" destination="nnm-Vz-btc" id="R16-Az-xiW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="613.60000000000002" y="93.842364532019715"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wfI-tV-xYH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VBw-gj-l0i" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XmB-Qp-7gR">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="il0-uc-tYR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B5I-pI-dad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-87.200000000000003" y="94.581280788177338"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="1ol-Oh-Wra">
+            <size key="intrinsicContentSize" width="271.66666666666669" height="40"/>
+        </designable>
+        <designable name="3Mf-Ax-HA2">
+            <size key="intrinsicContentSize" width="229.66666666666666" height="40"/>
+        </designable>
+        <designable name="MZy-QG-ztt">
+            <size key="intrinsicContentSize" width="51" height="39"/>
+        </designable>
+        <designable name="OWD-by-DYW">
+            <size key="intrinsicContentSize" width="155" height="40"/>
+        </designable>
+        <designable name="XRn-uF-KKr">
+            <size key="intrinsicContentSize" width="89" height="39"/>
+        </designable>
+        <designable name="pSw-rj-zF1">
+            <size key="intrinsicContentSize" width="190.33333333333334" height="40"/>
+        </designable>
+        <designable name="z8j-AM-FlU">
+            <size key="intrinsicContentSize" width="140" height="40"/>
+        </designable>
+        <designable name="zgR-Xb-8Qg">
+            <size key="intrinsicContentSize" width="162.66666666666666" height="40"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
