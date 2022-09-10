@@ -8,6 +8,9 @@ depth chart and every players bye week. You will be able to view top projected f
 the player to your team or mark the player as drafted in the same screen as you view them in with a simple swipe gesture. Fantasy FB Draft Kit
 is the perfect app to manage your fantasy football live drafts!
 
+Unlisted Player values excepted are as follows:
+Version 2022.1 - Team Name - 
+
 To report bugs, email me at japio7@icloud.com
 
 ## Screenshots
