@@ -9,7 +9,7 @@ the player to your team or mark the player as drafted in the same screen as you 
 is the perfect app to manage your fantasy football live drafts!
 
 Unlisted Player values excepted are as follows:
-Version 2022.1 - Team Name - 
+src=""
 
 To report bugs, email me at japio7@icloud.com
 
