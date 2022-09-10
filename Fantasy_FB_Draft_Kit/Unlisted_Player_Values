@@ -1,6 +1,6 @@
 Excepted Values are not case sensitive
 
-Team Names excepted:
+Team Name values excepted:
 buffalo bills, buffalo, buf, bills
 miami dolphins, miami, mia, dolphins
 new york jets, nyj, "jets
@@ -34,7 +34,7 @@ arizona cardinals, arizona, ari, cardinals
 los angeles Rams, lar, rams, seattle seahawks
 seattle, sea, seahawks
 
-Positions Excepted:
+Position values excepted:
 qb, quarterback, quarter back
 rb, runningback, running back
 wr, wide receiver, receiver
