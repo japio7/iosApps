@@ -1,0 +1,42 @@
+Excepted Values are not case sensitive
+
+Team Names excepted:
+buffalo bills, buffalo, buf, bills
+miami dolphins, miami, mia, dolphins
+new york jets, nyj, "jets
+new england patriots, new england, ne, patriots
+cincinatti bengals, cincinatti, cin, bengals
+cleveland browns, cleveland, cle, browns
+baltimore ravens, baltimore, bal, ravens
+pittsburgh steelers, pittsburgh, pit, steelers
+indianapolis colts, indianapolis, ind, colts
+jacksonville jaguars, jacksonville, jac, jaguars
+houston texans, houston, hou, texans
+tennessee titans, tennessee, ten, titans
+denver broncos, denver, den, broncos
+los angeles chargers, lac, chargers
+kansas city chiefs, kansas city, kc, chiefs
+las vegas raiders, las vegas, lv, raiders
+dallas cowboys, dallas, dal, cowboys
+philadelphia eagles, philadelphia, phi, eagles
+new york giants, nyg, giants
+washington commanders, washington, was, commanders
+chicago bears, chicago, chi, bears
+detroit lions, detroit, det, lions
+green bay packers, green bay, gb, packers
+minnesota vikings, minnesota, min, vikings
+tampa bay buccaneers, tampa bay, tb, buccaneers
+atlanta falcons, atlanta, atl, falcons
+carolina panthers, carolina, car, panthers
+new orleans saints, new orleans, no, saints
+san francisco 49ers, san francisco, sf, 49ers
+arizona cardinals, arizona, ari, cardinals
+los angeles Rams, lar, rams, seattle seahawks
+seattle, sea, seahawks
+
+Positions Excepted:
+qb, quarterback, quarter back
+rb, runningback, running back
+wr, wide receiver, receiver
+te, tight end
+k, kicker
