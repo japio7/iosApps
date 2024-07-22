@@ -13,4 +13,12 @@ Unlisted Player values excepted can be found at https://github.com/japio7/iosApp
 To report bugs, email me at japio7@icloud.com
 
 ## Screenshots
-<img width="200" alt="1242 X 2688_1" src="https://user-images.githubusercontent.com/39530089/187095096-7d531921-c64c-443a-b8e5-aeb4ff9bb935.png"> <img width="200" alt="1242 X 2688_2" src="https://user-images.githubusercontent.com/39530089/187095110-62d5d5c4-0b8b-4a03-b803-2d3723c427c9.png"> <img width="200" alt="1242 X 2688_3" src="https://user-images.githubusercontent.com/39530089/187095123-83e48d2a-6b81-417e-a1b9-9f4a28d3841f.png"> <img width="200" alt="1242 X 2688_4" src="https://user-images.githubusercontent.com/39530089/187095140-5f6fce9f-e13c-4385-a117-14679a49e0ef.png"> <img width="200" alt="1242 X 2688_5" src="https://user-images.githubusercontent.com/39530089/187095159-7e437d0a-259a-4dc7-b712-ffe6d475575e.png"> <img width="200" alt="1242 X 2688_6" src="https://user-images.githubusercontent.com/39530089/187095178-e6c65347-4a1d-4ab9-94fc-c12e9c68a765.png"> <img width="200" alt="1242 X 2688_7" src="https://user-images.githubusercontent.com/39530089/187095190-89930d15-e1db-43c6-a431-7cc134b310cf.png">
+<img width="200" alt="1290 X 2796 1" src="https://github.com/user-attachments/assets/b0b94787-92e6-492b-b2d5-4cacaf86ac8a">
+<img width="200" alt="1290 X 2796 2" src="https://github.com/user-attachments/assets/cba83f10-db25-4850-9333-0f07bb66f43f">
+<img width="200" alt="1290 X 2796 3" src="https://github.com/user-attachments/assets/37d3325f-9e28-4e84-9b40-44a7b3527ab7">
+<img width="200" alt="1290 X 2796 4" src="https://github.com/user-attachments/assets/d500cce4-f49b-4198-8f42-e6b5c7cd52d6">
+<img width="200" alt="1290 X 2796 5" src="https://github.com/user-attachments/assets/19b58dd1-6bd4-495b-8f49-b240ecaf5861">
+<img width="200" alt="1290 X 2796 6" src="https://github.com/user-attachments/assets/ca8718cb-9cf1-4d39-abc3-e1c5be854abd">
+<img width="200" alt="1290 X 2796 7" src="https://github.com/user-attachments/assets/8b560c18-fd77-49cc-b469-715b352a01eb">
+<img width="200" alt="1290 X 2796 8" src="https://github.com/user-attachments/assets/75b06c7b-2d84-46f3-8f92-fd88d3ef5ca9">
+<img width="200" alt="1290 X 2796 9" src="https://github.com/user-attachments/assets/c82add82-702e-44fa-b9ba-fdd56b505156">
