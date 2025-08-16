@@ -13,12 +13,11 @@ Unlisted Player values accepted can be found at [https://github.com/japio7/iosAp
 To report bugs, email me at japio7@icloud.com
 
 ## Screenshots
-<img width="200" alt="1290 X 2796 1" src="https://github.com/japio7/iosApps/blob/master/Fantasy_FB_Draft_Kit/Fantasy%20FB%20Draft%20Kit%20v_2025_1/Screenshots/1320%20X%202868%201.png">
-<img width="200" alt="1290 X 2796 2" src="https://github.com/user-attachments/assets/cba83f10-db25-4850-9333-0f07bb66f43f">
-<img width="200" alt="1290 X 2796 3" src="https://github.com/user-attachments/assets/37d3325f-9e28-4e84-9b40-44a7b3527ab7">
-<img width="200" alt="1290 X 2796 4" src="https://github.com/user-attachments/assets/d500cce4-f49b-4198-8f42-e6b5c7cd52d6">
-<img width="200" alt="1290 X 2796 5" src="https://github.com/user-attachments/assets/19b58dd1-6bd4-495b-8f49-b240ecaf5861">
-<img width="200" alt="1290 X 2796 6" src="https://github.com/user-attachments/assets/ca8718cb-9cf1-4d39-abc3-e1c5be854abd">
-<img width="200" alt="1290 X 2796 7" src="https://github.com/user-attachments/assets/8b560c18-fd77-49cc-b469-715b352a01eb">
-<img width="200" alt="1290 X 2796 8" src="https://github.com/user-attachments/assets/75b06c7b-2d84-46f3-8f92-fd88d3ef5ca9">
-<img width="200" alt="1290 X 2796 9" src="https://github.com/user-attachments/assets/c82add82-702e-44fa-b9ba-fdd56b505156">
+<img width="200" alt="1290 X 2796 1" src="https://github.com/user-attachments/assets/d7dd6b0f-941c-4764-8ec3-53f846cd4de1">
+<img width="200" alt="1290 X 2796 2" src="https://github.com/user-attachments/assets/f2c0a599-ff3e-4c65-84bd-fe50ad3e341b">
+<img width="200" alt="1290 X 2796 3" src="https://github.com/user-attachments/assets/61f2130d-11b0-40e4-ac19-909fd6255445">
+<img width="200" alt="1290 X 2796 4" src="https://github.com/user-attachments/assets/c0648dcd-4ad1-410d-ae4e-4281c439e6ca">
+<img width="200" alt="1290 X 2796 5" src="https://github.com/user-attachments/assets/64d42f7d-0f12-43c6-be6f-4049860fa839">
+<img width="200" alt="1290 X 2796 6" src="https://github.com/user-attachments/assets/d5aa40d8-c242-4f16-abb2-3654cec643c9">
+<img width="200" alt="1290 X 2796 7" src="https://github.com/user-attachments/assets/64d42f7d-0f12-43c6-be6f-4049860fa839">
+<img width="200" alt="1290 X 2796 8" src="https://github.com/user-attachments/assets/64d42f7d-0f12-43c6-be6f-4049860fa839">
