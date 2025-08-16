@@ -13,7 +13,7 @@ Unlisted Player values accepted can be found at [https://github.com/japio7/iosAp
 To report bugs, email me at japio7@icloud.com
 
 ## Screenshots
-<img width="200" alt="1290 X 2796 1" src="https://github.com/user-attachments/assets/b0b94787-92e6-492b-b2d5-4cacaf86ac8a">
+https://github.com/japio7/iosApps/blob/master/Fantasy_FB_Draft_Kit/Fantasy%20FB%20Draft%20Kit%20v_2025_1/Screenshots/1320%20X%202868%201.png
 <img width="200" alt="1290 X 2796 2" src="https://github.com/user-attachments/assets/cba83f10-db25-4850-9333-0f07bb66f43f">
 <img width="200" alt="1290 X 2796 3" src="https://github.com/user-attachments/assets/37d3325f-9e28-4e84-9b40-44a7b3527ab7">
 <img width="200" alt="1290 X 2796 4" src="https://github.com/user-attachments/assets/d500cce4-f49b-4198-8f42-e6b5c7cd52d6">
