@@ -1,4 +1,5 @@
-# Fantasy FB Draft Kit
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/3fa019be-6164-435d-8bd0-d8f35bc0e509" />
+
 
 ## Details
 Going to a live fantasy football draft? Leave your paper, pens, and books at home! all you need is your iPhone or iPad and Fantasy FB Draft
@@ -10,7 +11,7 @@ is the perfect app to manage your fantasy football live drafts!
 
 Unlisted Player values accepted can be found at [https://github.com/japio7/iosApps/blob/master/Fantasy_FB_Draft_Kit/Unlisted_Player_Values](https://github.com/japio7/iosApps/blob/master/Fantasy_FB_Draft_Kit/Unlisted%20Player%20Values%20Accepted.pdf)
 
-To report bugs, email me at japio7@icloud.com
+To report bugs or app update suggestions email me at japio7@icloud.com
 
 ## Screenshots
 <img width="200" alt="1290 X 2796 1" src="https://github.com/user-attachments/assets/d7dd6b0f-941c-4764-8ec3-53f846cd4de1">
