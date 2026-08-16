@@ -26,13 +26,26 @@ SEASON TOOLS\
 • Fantasy leaders\
 • Start/Sit Assistant
 
-MANAGE YOUR TEAM
+MANAGE YOUR TEAM\
 Keep using Fantasy FB Draft Kit after draft day. Manage your fantasy rosters by adding and dropping players while keeping your original draft picks available for reference.
 
-TRACK YOUR FANTASY HISTORY
+TRACK YOUR FANTASY HISTORY\
 Manage multiple fantasy leagues and revisit previous seasons so your fantasy football history stays with you year after year.
 
 From draft preparation to in-season management, Fantasy FB Draft Kit gives you one place to manage your fantasy football season.
+
+## What's New in this Version (2026.2)
+Fantasy FB Draft Kit is ready for the 2026 fantasy football season!
+
+• Updated 2026 player rankings and draft data\
+• New Fantasy FB Draft Kit Pro subscription\
+• Added Start/Sit Assistant and player analysis tools\
+• Added injury reports, depth charts, fantasy news, and fantasy leaders\
+• Improved team and league management\
+• Updated Previous Seasons support\
+• Improved performance, navigation, and overall app experience
+
+Get ready for your draft and dominate your league!
 
 Unlisted Player values accepted can be found at [https://github.com/japio7/iosApps/blob/master/Fantasy_FB_Draft_Kit/Unlisted_Player_Values](https://github.com/japio7/iosApps/blob/master/Fantasy_FB_Draft_Kit/Unlisted%20Player%20Values%20Accepted.pdf)
 
